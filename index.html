@@ -1,39 +1,245 @@
-  <!DOCTYPE html>
-  <html lang="en">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Academic homepage of Yujie (Jason) Zhang, an M.S. student interested in robot navigation, motion planning, and embodied intelligence."
+    >
     <title>Yujie (Jason) Zhang</title>
+    <link rel="icon" href="assets/profile.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Yujie (Jason) Zhang</h1>
+    <main class="page">
+      <header class="profile" id="top">
+        <div class="profile-copy">
+          <h1>Yujie (Jason) Zhang</h1>
+          <p>
+            Hello! 👋 I am an M.S. student in Mechanical Engineering at
+            <a href="https://www.hebut.edu.cn/">Hebei University of Technology</a>,
+            where I am advised by
+            <a href="https://mes.hebut.edu.cn/szdw/jsml/jdx/587a7b84b8f549ca8cb5730fac75df7e.htm">Prof. Jinyue Liu</a>.
+          </p>
+          <p>
+            My research centers on autonomous robot navigation in building
+            environments, especially BIM–semantic prior fusion, reliable
+            localization and mapping, VLM-based scene understanding, and
+            risk-aware motion control.
+          </p>
+          <p class="profile-links">
+            <a href="mailto:202421202009@stu.hebut.edu.cn">Email</a>
+            <span aria-hidden="true">/</span>
+            <a href="https://github.com/yujie-jason-zhang">GitHub</a>
+            <span aria-hidden="true">/</span>
+            <a href="#projects">Projects</a>
+          </p>
+        </div>
+        <div class="profile-photo-wrap">
+          <img
+            class="profile-photo"
+            src="assets/profile.jpg"
+            alt="Portrait of Yujie Zhang"
+          >
+        </div>
+      </header>
 
-    <p>
-      M.S. student interested in robot navigation, motion planning, and embodied
-      intelligence.
-    </p>
+      <section class="section" id="news">
+        <h2>News</h2>
+        <div class="news-list">
+          <p><time datetime="2026-08-12">2026.08.12</time> Our paper “Degenerate in Whose Frame? An Equivariance Condition for Degeneracy Detection in LiDAR Registration” was submitted to <em>IEEE Robotics and Automation Letters</em> (RA-L).</p>
+          <p><time datetime="2026-07-29">2026.07.29</time> Our paper “Navigating Deceptive Construction Environments: A Prompt-Guided VLM Framework for Semantic Traversability Analysis and Safe AGV Navigation” was accepted by <em>Advanced Engineering Informatics</em> (AEI).</p>
+          <p><time datetime="2026-07-25">2026.07.25</time> Our paper “A Multimodal Information Transformation Framework for Language-Driven Scene Reconfiguration in Construction Automation” was accepted by <em>Advanced Engineering Informatics</em> (AEI).</p>
+          <p><time datetime="2026-07-11">2026.07.11</time> Our paper “Move First, Commit Later: Selective LiDAR-to-BIM Global Initialization via Sequential Consensus with Symmetry-Aware Abstention” was submitted to <em>IEEE Robotics and Automation Letters</em> (RA-L).</p>
+          <p><time datetime="2026-02-02">2026.02.02</time> Our paper on event-triggered collision-free formation control was published online in <em>IEEE Transactions on Automation Science and Engineering</em>.</p>
+          <p><time datetime="2025-09-16">2025.09.16</time> Our paper on dual-region-based avoidance control was published online in <em>IEEE Transactions on Control Systems Technology</em>.</p>
+        </div>
+      </section>
 
-    <p>
-      Email: your-email@example.com |
-      GitHub: <a href="https://github.com/yujie-jason-zhang">yujie-jason-zhang</
-      a>
-    </p>
+      <section class="section" id="research">
+        <h2>Research</h2>
 
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Robot Navigation</li>
-      <li>Motion Planning</li>
-      <li>SLAM</li>
-      <li>Embodied Intelligence</li>
-    </ul>
+        <article class="research-item">
+          <a class="research-figure" href="https://arxiv.org/abs/2607.17103">
+            <img
+              src="assets/publications/move-first-teaser.png"
+              alt="Move First, Commit Later framework: sequential consensus followed by typed abstention"
+            >
+          </a>
+          <div class="research-copy">
+            <a class="paper-title" href="https://arxiv.org/abs/2607.17103">Move First, Commit Later: Selective LiDAR-to-BIM Global Initialization via Sequential Consensus with Symmetry-Aware Abstention</a>
+            <p><em>arXiv preprint arXiv:2607.17103</em>, 2026. Submitted to <em>IEEE Robotics and Automation Letters</em>.</p>
+            <p class="paper-links">
+              <a href="https://arxiv.org/abs/2607.17103">arXiv</a>
+              <span>/</span>
+              <a href="https://arxiv.org/pdf/2607.17103">PDF</a>
+            </p>
+            <p>
+              A selective LiDAR-to-BIM initialization framework that accumulates
+              cross-frame evidence and defers pose commitment when symmetry makes
+              the global match ambiguous.
+            </p>
+          </div>
+        </article>
 
-    <h2>Education</h2>
-    <p>M.S. Student, your university, your major.</p>
+        <article class="research-item">
+          <a class="research-figure" href="https://ieeexplore.ieee.org/abstract/document/11370198">
+            <img
+              src="assets/publications/tase-system-block-diagram.png"
+              alt="Control block diagram of the leader and follower vehicle controllers"
+            >
+          </a>
+          <div class="research-copy">
+            <a class="paper-title" href="https://ieeexplore.ieee.org/abstract/document/11370198">Event-Triggered Collision-Free Formation Control of Symmetric-Steering Vehicles Using Generalized p-Norm and Smooth Risk Metrics</a>
+            <p><em>IEEE Transactions on Automation Science and Engineering</em>, vol. 23, pp. 4960–4975, 2026.</p>
+            <p class="paper-links">
+              <a href="https://ieeexplore.ieee.org/abstract/document/11370198">paper</a>
+              <span>/</span>
+              <a href="https://doi.org/10.1109/TASE.2026.3660049">DOI</a>
+            </p>
+            <p>
+              An event-triggered formation-control method for symmetric-steering
+              vehicles using generalized p-norm and smooth risk metrics.
+            </p>
+          </div>
+        </article>
 
-    <h2>Projects</h2>
-    <ul>
-      <li>BIM Navigation</li>
-      <li>BIM Location</li>
-      <li>Autolabor ROS2 Project</li>
-    </ul>
+        <article class="research-item">
+          <a class="research-figure" href="https://ieeexplore.ieee.org/abstract/document/11165443">
+            <img
+              src="assets/publications/tcst-dual-regions.png"
+              alt="Car-like vehicle with dual and single forbidden regions for collision avoidance"
+            >
+          </a>
+          <div class="research-copy">
+            <a class="paper-title" href="https://ieeexplore.ieee.org/abstract/document/11165443">Dual-Region-Based Variable-Structure Avoidance Control Strategy for Multiple Car-Like Vehicles</a>
+            <p><em>IEEE Transactions on Control Systems Technology</em>, vol. 34, no. 1, pp. 215–230, 2026.</p>
+            <p class="paper-links">
+              <a href="https://ieeexplore.ieee.org/abstract/document/11165443">paper</a>
+              <span>/</span>
+              <a href="https://doi.org/10.1109/TCST.2025.3604861">DOI</a>
+            </p>
+            <p>
+              A dual-region, variable-structure avoidance strategy for safe
+              coordination among multiple car-like vehicles.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <div class="education-entry">
+          <a class="education-logo" href="https://www.hebut.edu.cn/" aria-label="Hebei University of Technology website">
+            <img src="assets/hebut.png" alt="Hebei University of Technology emblem">
+          </a>
+          <div class="education-degree">
+            <strong>Hebei University of Technology</strong><br>
+            <em>M.S. in Mechanical Engineering, September 2024 – Present</em><br>
+            Average score: 92/100<br>
+            Research direction: Intelligent Robotics<br>
+            Advisor: Prof. Jinyue Liu; Co-advisor: Prof. Wenxue Zhang
+          </div>
+        </div>
+        <div class="education-entry">
+          <a class="education-logo" href="https://www.hebut.edu.cn/" aria-label="Hebei University of Technology website">
+            <img src="assets/hebut.png" alt="Hebei University of Technology emblem">
+          </a>
+          <div class="education-degree">
+            <strong>Hebei University of Technology</strong><br>
+            <em>B.Eng. in Mechatronic Engineering, September 2020 – June 2024</em><br>
+            Average score: 89/100
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>Engineering Projects</h2>
+
+        <article class="research-item project-item">
+          <div class="research-figure project-figure">
+            <img src="assets/projects/cold-recycling-train.jpg" alt="Cold-recycling train operating on a road construction site" loading="lazy">
+          </div>
+          <div class="research-copy">
+            <span class="paper-title">Autonomous Operating Control System for a Cold-Recycling Train</span>
+            <p><em>Hebei Transportation Investment Group</em></p>
+            <ul class="project-details">
+              <li>Fused RTK-GNSS and IMU measurements for centimeter-level localization and vehicle-state estimation.</li>
+              <li>Mapped vision-extracted construction baselines into 3D and combined LiDAR SLAM with RTK for cascaded trajectory generation.</li>
+              <li>Developed ROS-based trajectory tracking, leader–follower control, and inter-vehicle distance compensation.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="research-item project-item">
+          <div class="research-figure project-figure">
+            <img src="assets/projects/intelligent-wheel-loader.jpg" alt="Intelligent wheel loader at an outdoor material pile" loading="lazy">
+          </div>
+          <div class="research-copy">
+            <span class="paper-title">Automated Material Loading for Intelligent Wheel Loaders</span>
+            <p><em>Shantui Construction Machinery Co., Ltd.</em></p>
+            <ul class="project-details">
+              <li>Built and tested the loader navigation-control system using ROS and C++.</li>
+              <li>Planned loading and unloading trajectories for bins, material piles, and hoppers.</li>
+              <li>Integrated navigation, drive-by-wire, dispatching, and operation-execution states.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="research-item project-item">
+          <div class="research-figure project-figure">
+            <img src="assets/projects/pipeline-grinding-system.jpg" alt="Automated internal pipeline weld grinding robot" loading="lazy">
+          </div>
+          <div class="research-copy">
+            <span class="paper-title">Automated Internal Girth-Weld Grinding System for Pipelines</span>
+            <p><em>China Petroleum Pipeline Research Institute Co., Ltd.</em></p>
+            <ul class="project-details">
+              <li>Designed the chassis communication architecture and decoupled control algorithms from low-level actuators.</li>
+              <li>Built the motion-control chain from velocity commands to motor drives.</li>
+              <li>Fused IMU, laser ranging, and line-laser data for attitude adjustment and safe-distance control.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="research-item project-item">
+          <div class="research-figure project-figure">
+            <img src="assets/projects/throwable-sensor-node.jpg" alt="Throwable multi-sensor perception node" loading="lazy">
+          </div>
+          <div class="research-copy">
+            <span class="paper-title">Throwable Multi-Sensor Perception Node System</span>
+            <p><em>A military academy in Beijing</em></p>
+            <ul class="project-details">
+              <li>Associated vision detections with 3D LiDAR points through camera–LiDAR calibration.</li>
+              <li>Estimated target class, relative bearing, and distance from semantic and geometric measurements.</li>
+              <li>Supported camera–LiDAR and LiDAR–GNSS/magnetometer calibration and system integration.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="section compact-section" id="skills">
+        <h2>Skills</h2>
+        <dl class="skill-list">
+          <div><dt>Robotics Development</dt><dd>C/C++, Python, ROS, Linux, OpenCV</dd></div>
+          <div><dt>AI &amp; Multimodal</dt><dd>PyTorch, TensorFlow, VLMs, multimodal perception</dd></div>
+          <div><dt>Localization &amp; Perception</dt><dd>LiDAR, cameras, IMU, GNSS/RTK, multi-sensor calibration and fusion</dd></div>
+          <div><dt>Simulation &amp; Computing</dt><dd>MATLAB/Simulink, Gazebo, Isaac Sim, Origin</dd></div>
+          <div><dt>Engineering</dt><dd>SolidWorks, AutoCAD, PLC, Modbus TCP, CAN</dd></div>
+          <div><dt>Languages</dt><dd>CET-6; Mandarin Proficiency Test, Level 2-A</dd></div>
+        </dl>
+      </section>
+
+      <footer class="footer">
+        <p>Last updated: August 2026.</p>
+        <p><a href="#top">Back to top</a></p>
+      </footer>
+    </main>
   </body>
-  </html>
+</html>
