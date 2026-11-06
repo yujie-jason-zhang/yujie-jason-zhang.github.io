@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Mamba-SAC conceptual overview</title>
+  <desc id="desc">Force and motion history is encoded by Mamba and passed to a soft actor–critic policy and a Cartesian impedance controller for robot tracking. This is a conceptual illustration, not a figure from the paper.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#527184"/></marker>
+  </defs>
+  <rect width="600" height="400" fill="#fff"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="300" y="35" font-size="25" font-weight="700" fill="#243b4a">Mamba-SAC</text>
+    <g stroke-width="2">
+      <rect x="55" y="60" width="490" height="56" rx="9" fill="#f1f5f8" stroke="#a3b4bf"/>
+      <rect x="55" y="143" width="230" height="76" rx="9" fill="#e9f4f5" stroke="#65a3aa"/>
+      <rect x="315" y="143" width="230" height="76" rx="9" fill="#edf3fc" stroke="#7399c8"/>
+      <rect x="55" y="257" width="490" height="70" rx="9" fill="#faf3e9" stroke="#c6a477"/>
+    </g>
+    <g fill="#243b4a" font-size="21">
+      <text x="300" y="95">Force / motion history</text>
+      <text x="170" y="175">Mamba encoder</text>
+      <text x="170" y="201" font-size="17">Selective state space</text>
+      <text x="430" y="187">SAC policy</text>
+      <text x="300" y="286">Cartesian impedance control</text>
+      <text x="300" y="312" font-size="17">100 Hz · Force-guided robot tracking</text>
+    </g>
+    <g fill="none" stroke="#527184" stroke-width="2.5" marker-end="url(#arrow)">
+      <path d="M170 116V140"/>
+      <path d="M285 181H312"/>
+      <path d="M430 219V254"/>
+    </g>
+    <text x="300" y="370" font-size="17" fill="#687b87">Conceptual overview</text>
+  </g>
+</svg>

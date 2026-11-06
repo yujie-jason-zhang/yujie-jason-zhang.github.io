@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Academic homepage of Yujie (Jason) Zhang, an M.S. student interested in robot navigation, motion planning, and embodied intelligence."
+      content="Academic homepage of Yujie (Jason) Zhang, an M.S. student researching reliable robot localization and navigation, interpretable foundation models for industrial applications, and task workflow automation for construction robots."
     >
     <title>Yujie (Jason) Zhang</title>
     <link rel="icon" href="assets/hebut.png" type="image/png">
@@ -29,10 +29,9 @@
             <a href="https://mes.hebut.edu.cn/szdw/jsml/jdx/587a7b84b8f549ca8cb5730fac75df7e.htm">Prof. Jinyue Liu</a>.
           </p>
           <p>
-            My research centers on autonomous robot navigation in building
-            environments, especially BIM–semantic prior fusion, reliable
-            localization and mapping, VLM-based scene understanding, and
-            risk-aware motion control.
+            My research focuses on reliability in robot localization and
+            navigation, interpretable foundation models for industrial
+            applications, and task workflow automation for construction robots.
           </p>
           <p class="profile-links">
             <a href="mailto:202421202009@stu.hebut.edu.cn">Email</a>
@@ -54,12 +53,10 @@
       <section class="section" id="news">
         <h2>News</h2>
         <div class="news-list">
-          <p><time datetime="2026-08-12">2026.08.12</time> Our paper “Degenerate in Whose Frame? An Equivariance Condition for Degeneracy Detection in LiDAR Registration” was submitted to <em>IEEE Robotics and Automation Letters</em> (RA-L).</p>
-          <p><time datetime="2026-07-29">2026.07.29</time> Our paper “Navigating Deceptive Construction Environments: A Prompt-Guided VLM Framework for Semantic Traversability Analysis and Safe AGV Navigation” was accepted by <em>Advanced Engineering Informatics</em> (AEI).</p>
-          <p><time datetime="2026-07-25">2026.07.25</time> Our paper “A Multimodal Information Transformation Framework for Language-Driven Scene Reconfiguration in Construction Automation” was accepted by <em>Advanced Engineering Informatics</em> (AEI).</p>
-          <p><time datetime="2026-07-11">2026.07.11</time> Our paper “Move First, Commit Later: Selective LiDAR-to-BIM Global Initialization via Sequential Consensus with Symmetry-Aware Abstention” was submitted to <em>IEEE Robotics and Automation Letters</em> (RA-L).</p>
-          <p><time datetime="2026-02-02">2026.02.02</time> Our paper on event-triggered collision-free formation control was published online in <em>IEEE Transactions on Automation Science and Engineering</em> (TASE).</p>
-          <p><time datetime="2025-09-16">2025.09.16</time> Our paper on dual-region-based avoidance control was published online in <em>IEEE Transactions on Control Systems Technology</em> (TCST).</p>
+          <p><time datetime="2026-11-05">2026.11.05</time> Our paper “When to Trust the BIM: Identifiability-Aware LiDAR-Inertial–BIM Fusion under As-Built Deviations” was submitted to <em>Advanced Engineering Informatics</em> (AEI).</p>
+          <p><time datetime="2026-10-19">2026.10.19</time> Our paper “Move First, Commit Later: Selective LiDAR-to-BIM Global Initialization by Verifying Proposals Against Competing Explanations” was submitted to <em>IEEE Robotics and Automation Letters</em> (RA-L).</p>
+          <p><time datetime="2026-09-11">2026.09.11</time> Our paper “Laser odometry optimization algorithm based on model point cloud probabilistic information and image semantic similarity” was accepted by <em>Industrial Robot</em>.</p>
+          <p><time datetime="2026-08-15">2026.08.15</time> Our paper “Degenerate in Whose Frame? An Equivariance Condition for Degeneracy Detection in LiDAR Registration” was submitted to <em>IEEE Robotics and Automation Letters</em> (RA-L).</p>
         </div>
       </section>
 
@@ -67,19 +64,43 @@
         <h2>Research</h2>
 
         <article class="research-item">
-          <a class="research-figure" href="https://arxiv.org/abs/2607.17103">
+          <a class="research-figure" href="assets/publications/bim-priori-framework.jpg" target="_blank" rel="noopener" title="View full-size figure">
             <img
-              src="assets/publications/move-first-teaser.png"
-              alt="Move First, Commit Later framework: sequential consensus followed by typed abstention"
+              src="assets/publications/bim-priori-framework.jpg"
+              alt="BIM-Priori system overview: semantic observations, BIM anchor construction, and graph optimization"
+              loading="lazy"
             >
           </a>
           <div class="research-copy">
-            <a class="paper-title" href="https://arxiv.org/abs/2607.17103">Move First, Commit Later: Selective LiDAR-to-BIM Global Initialization via Sequential Consensus with Symmetry-Aware Abstention</a>
-            <p><em>arXiv preprint arXiv:2607.17103</em>, 2026. Submitted to <em>IEEE Robotics and Automation Letters</em>.</p>
+            <a class="paper-title" href="https://www.sciencedirect.com/science/article/pii/S1474034626010827">BIM-Priori — Integrating semantic–geometric BIM priors as knowledge constraints for robot localization and mapping</a>
+            <p><em>Advanced Engineering Informatics</em>, vol. 77, article 105390, 2027. Published online.</p>
             <p class="paper-links">
-              <a href="https://arxiv.org/abs/2607.17103">arXiv</a>
+              <a href="https://www.sciencedirect.com/science/article/pii/S1474034626010827">paper</a>
               <span>/</span>
-              <a href="https://arxiv.org/pdf/2607.17103">PDF</a>
+              <a href="https://doi.org/10.1016/j.aei.2026.105390">DOI</a>
+            </p>
+            <p>
+              A semantic LiDAR-inertial SLAM framework that screens BIM matches
+              into reliable anchors and relative pose-graph constraints to improve
+              map consistency and align robot trajectories with BIM.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-item">
+          <a class="research-figure" href="assets/publications/move-first-framework.png" target="_blank" rel="noopener" title="View full-size figure">
+            <img
+              src="assets/publications/move-first-framework.png"
+              alt="Move First, Commit Later framework: LiDAR-inertial odometry and BIM registration followed by proposal, verification, and DEFER, AMBIGUOUS, or COMMIT outputs"
+            >
+          </a>
+          <div class="research-copy">
+            <a class="paper-title" href="https://arxiv.org/abs/2607.17103v2">Move First, Commit Later: Selective LiDAR-to-BIM Global Initialization by Verifying Proposals Against Competing Explanations</a>
+            <p><em>arXiv preprint arXiv:2607.17103v2</em>, 2026. Submitted to <em>IEEE Robotics and Automation Letters</em> on October 19, 2026.</p>
+            <p class="paper-links">
+              <a href="https://arxiv.org/abs/2607.17103v2">arXiv</a>
+              <span>/</span>
+              <a href="https://arxiv.org/pdf/2607.17103v2">PDF</a>
             </p>
             <p>
               A selective LiDAR-to-BIM initialization framework that accumulates
@@ -90,7 +111,80 @@
         </article>
 
         <article class="research-item">
-          <a class="research-figure" href="https://ieeexplore.ieee.org/abstract/document/11370198">
+          <a class="research-figure" href="assets/publications/degenerate-frame-teaser.svg" target="_blank" rel="noopener" title="View full-size figure">
+            <img
+              src="assets/publications/degenerate-frame-teaser.svg"
+              alt="The same tunnel motion produces different per-axis degeneracy labels when the coordinate origin shifts off the tunnel axis"
+              loading="lazy"
+            >
+          </a>
+          <div class="research-copy">
+            <a class="paper-title" href="https://arxiv.org/abs/2608.15532">Degenerate in Whose Frame? An Equivariance Condition for Degeneracy Detection in LiDAR Registration</a>
+            <p><em>arXiv preprint arXiv:2608.15532</em>, 2026. Submitted to <em>IEEE Robotics and Automation Letters</em> on August 15, 2026.</p>
+            <p class="paper-links">
+              <a href="https://arxiv.org/abs/2608.15532">arXiv</a>
+              <span>/</span>
+              <a href="https://arxiv.org/pdf/2608.15532">PDF</a>
+            </p>
+            <p>
+              An analysis of coordinate-frame dependence in LiDAR degeneracy
+              detection, with an equivariant point-displacement metric for
+              frame-independent generalized eigenvalues and an evaluation of
+              how frame choices affect pose corrections.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-item">
+          <a class="research-figure" href="assets/publications/mamba-sac-overview.svg" target="_blank" rel="noopener" title="View full-size figure">
+            <img
+              src="assets/publications/mamba-sac-overview.svg"
+              alt="Conceptual overview of Mamba history encoding, SAC policy, and impedance control for force-guided robot tracking"
+              loading="lazy"
+            >
+          </a>
+          <div class="research-copy">
+            <a class="paper-title" href="https://www.emerald.com/ir/article/doi/10.1108/IR-03-2026-0100/1398487/Mamba-SAC-selective-state-space-modelling-for">Mamba-SAC: selective state space modelling for robot force-guided trajectory tracking</a>
+            <p><em>Industrial Robot: the international journal of robotics research and application</em>, pp. 1–17, 2026. EarlyCite, published online September 24, 2026.</p>
+            <p class="paper-links">
+              <a href="https://www.emerald.com/ir/article/doi/10.1108/IR-03-2026-0100/1398487/Mamba-SAC-selective-state-space-modelling-for">paper</a>
+              <span>/</span>
+              <a href="https://doi.org/10.1108/IR-03-2026-0100">DOI</a>
+            </p>
+            <p>
+              Mamba history encoding with soft actor–critic and a 100-Hz Cartesian
+              impedance interface for stable force-guided tracking, evaluated on
+              a seven-degree-of-freedom robot.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-item">
+          <a class="research-figure" href="assets/publications/multimodal-transformation-framework.jpg" target="_blank" rel="noopener" title="View full-size figure">
+            <img
+              src="assets/publications/multimodal-transformation-framework.jpg"
+              alt="Multimodal information transformation framework linking language and scene observations to structured JSON requests, execution, and audit"
+              loading="lazy"
+            >
+          </a>
+          <div class="research-copy">
+            <a class="paper-title" href="https://www.sciencedirect.com/science/article/pii/S1474034626007676">A multimodal information transformation framework for language-driven scene reconfiguration in construction automation</a>
+            <p><em>Advanced Engineering Informatics</em>, vol. 76, article 105075, 2026.</p>
+            <p class="paper-links">
+              <a href="https://www.sciencedirect.com/science/article/pii/S1474034626007676">paper</a>
+              <span>/</span>
+              <a href="https://doi.org/10.1016/j.aei.2026.105075">DOI</a>
+            </p>
+            <p>
+              A VLM–JSON–Executor architecture that converts language instructions
+              and scene observations into structured robot requests, with
+              hierarchical evaluation of grounding, planning, and execution.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-item">
+          <a class="research-figure" href="assets/publications/tase-system-block-diagram.png" target="_blank" rel="noopener" title="View full-size figure">
             <img
               src="assets/publications/tase-system-block-diagram.png"
               alt="Control block diagram of the leader and follower vehicle controllers"
@@ -112,7 +206,7 @@
         </article>
 
         <article class="research-item">
-          <a class="research-figure" href="https://ieeexplore.ieee.org/abstract/document/11165443">
+          <a class="research-figure" href="assets/publications/tcst-dual-regions.png" target="_blank" rel="noopener" title="View full-size figure">
             <img
               src="assets/publications/tcst-dual-regions.png"
               alt="Car-like vehicle with dual and single forbidden regions for collision avoidance"
@@ -237,7 +331,7 @@
       </section>
 
       <footer class="footer">
-        <p>Last updated: August 2026.</p>
+        <p>Last updated: November 2026.</p>
         <p><a href="#top">Back to top</a></p>
       </footer>
     </main>
